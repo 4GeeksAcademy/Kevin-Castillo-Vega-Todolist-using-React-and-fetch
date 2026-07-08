@@ -1,11 +1,170 @@
-/* 
+body {
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+    margin:0;
 
-*/
+    min-height:100vh;
+
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b
+    );
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.todo-container {
+
+    background:white;
+
+    width:500px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.3);
+
+}
+
+
+
+.todo-container h1 {
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:#1e293b;
+
+}
+
+
+
+.task-input {
+
+    width:100%;
+
+    padding:15px;
+
+    font-size:18px;
+
+    border-radius:10px;
+
+    border:2px solid #cbd5e1;
+
+    outline:none;
+
+    box-sizing:border-box;
+
+}
+
+
+
+.task-input:focus {
+
+    border-color:#2563eb;
+
+}
+
+
+
+ul {
+
+    padding:0;
+
+    list-style:none;
+
+    margin-top:25px;
+
+}
+
+
+
+.todo-item {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#f1f5f9;
+
+    padding:15px;
+
+    margin-bottom:10px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+}
+
+
+
+.delete-btn {
+
+    border:none;
+
+    background:none;
+
+    color:red;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
+
+
+
+.delete-btn:hover {
+
+    transform:scale(1.2);
+
+}
+
+
+
+.clear-btn {
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#dc2626;
+
+    color:white;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+
+
+.clear-btn:hover {
+
+    background:#991b1b;
+
+}
